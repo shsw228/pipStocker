@@ -55,7 +55,8 @@ class ShareViewController: UIViewController {
             // item に格納されている
             
             guard let string = item as? String else { return }
-            self?.save(string: string)
+            let result = string.yahooTranditExchangeTrim()
+            self?.save(string: result)
             // 最後にこれを呼ばないとフリーズする
             
             self?.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
