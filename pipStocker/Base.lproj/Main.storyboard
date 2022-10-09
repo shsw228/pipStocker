@@ -16,12 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-Kl-diu">
-                                <rect key="frame" x="0.0" y="57.000000000000007" width="390" height="20.333333333333336"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0I-vI-3bd" customClass="UIPiPView" customModule="UIPiPView">
+                                <rect key="frame" x="0.0" y="47" width="390" height="20.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-Kl-diu">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7Vb-Kl-diu" firstAttribute="top" secondItem="R0I-vI-3bd" secondAttribute="top" id="5rZ-yL-bsd"/>
+                                    <constraint firstItem="7Vb-Kl-diu" firstAttribute="leading" secondItem="R0I-vI-3bd" secondAttribute="leading" id="6ae-UD-mCu"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Vb-Kl-diu" secondAttribute="trailing" id="Z3A-9Z-1gD"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Vb-Kl-diu" secondAttribute="bottom" id="iEa-Fz-wTB"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acx-Ya-TfV">
                                 <rect key="frame" x="0.0" y="775" width="390" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -34,17 +46,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="R0I-vI-3bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7cf-62-RhO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acx-Ya-TfV" secondAttribute="trailing" id="8wQ-h9-pIg"/>
-                            <constraint firstItem="acx-Ya-TfV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Vb-Kl-diu" secondAttribute="bottom" id="8xQ-53-mIY"/>
-                            <constraint firstItem="7Vb-Kl-diu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8zk-pV-S3G"/>
-                            <constraint firstItem="7Vb-Kl-diu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FiJ-Mk-PhD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="acx-Ya-TfV" secondAttribute="bottom" id="a7N-xy-E1Q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Vb-Kl-diu" secondAttribute="trailing" id="c2O-At-bhC"/>
+                            <constraint firstItem="R0I-vI-3bd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fw2-IH-deA"/>
                             <constraint firstItem="acx-Ya-TfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kuP-eB-bKW"/>
+                            <constraint firstItem="acx-Ya-TfV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="R0I-vI-3bd" secondAttribute="bottom" id="o37-dZ-DB9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R0I-vI-3bd" secondAttribute="trailing" id="qJk-5f-ACd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="7Vb-Kl-diu" id="bLl-tL-UoV"/>
+                        <outlet property="pipView" destination="R0I-vI-3bd" id="loq-gP-Zue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

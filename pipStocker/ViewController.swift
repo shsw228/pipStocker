@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import UIPiPView
 
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
-    @IBAction func tapStartPipView(_ sender: Any) {
+    @IBOutlet weak var pipView: UIPiPView!
+    
+    
+    @IBAction func tapStartPipView(_ sender: UIButton) {
         print("\(#function)")
+        togglePipView()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,7 @@ class ViewController: UIViewController {
     @objc private func didBecomeActive(_ notification: Notification) {
         setStoredLabel()
     }
+    //TODO: Extensionに切り出す
     private func setStoredLabel() {
         // AppGroups に設定したもの
         let suiteName = "group.com.hume.pipStocker"
@@ -32,5 +38,13 @@ class ViewController: UIViewController {
         let value = userDefaults?.string(forKey: key)
         label.text = value
     }
+    private func togglePipView() {
+        if (!pipView.isPictureInPictureActive()) {
+            pipView.startPictureInPictureWithManualCallRender()
+        }else {
+            pipView.stopPictureInPicture()
+        }
+    }
+    
 }
 

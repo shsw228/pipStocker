@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B794FF9928F302FB009933DA /* UIPiPView in Frameworks */ = {isa = PBXBuildFile; productRef = B794FF9828F302FB009933DA /* UIPiPView */; };
 		B79B68D528F2C33500AC680D /* UserDefault+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */; };
 		B79B68D628F2C33500AC680D /* UserDefault+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */; };
 		B7A00C6928F2A7C100B90137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C6828F2A7C100B90137 /* AppDelegate.swift */; };
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B794FF9928F302FB009933DA /* UIPiPView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +205,9 @@
 				B7A00CA528F2B0E300B90137 /* PBXTargetDependency */,
 			);
 			name = pipStocker;
+			packageProductDependencies = (
+				B794FF9828F302FB009933DA /* UIPiPView */,
+			);
 			productName = pipStocker;
 			productReference = B7A00C6528F2A7C100B90137 /* pipStocker.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +300,9 @@
 				Base,
 			);
 			mainGroup = B7A00C5C28F2A7C100B90137;
+			packageReferences = (
+				B794FF9728F302FB009933DA /* XCRemoteSwiftPackageReference "UIPiPView" */,
+			);
 			productRefGroup = B7A00C6628F2A7C100B90137 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -780,6 +788,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B794FF9728F302FB009933DA /* XCRemoteSwiftPackageReference "UIPiPView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uakihir0/UIPiPView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B794FF9828F302FB009933DA /* UIPiPView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B794FF9728F302FB009933DA /* XCRemoteSwiftPackageReference "UIPiPView" */;
+			productName = UIPiPView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7A00C5D28F2A7C100B90137 /* Project object */;
 }
