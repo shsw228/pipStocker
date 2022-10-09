@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B79B68D528F2C33500AC680D /* UserDefault+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */; };
+		B79B68D628F2C33500AC680D /* UserDefault+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */; };
 		B7A00C6928F2A7C100B90137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C6828F2A7C100B90137 /* AppDelegate.swift */; };
 		B7A00C6B28F2A7C100B90137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C6A28F2A7C100B90137 /* SceneDelegate.swift */; };
 		B7A00C6D28F2A7C100B90137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C6C28F2A7C100B90137 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 		B7A00C8028F2A7C300B90137 /* pipStockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C7F28F2A7C300B90137 /* pipStockerTests.swift */; };
 		B7A00C8A28F2A7C300B90137 /* pipStockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C8928F2A7C300B90137 /* pipStockerUITests.swift */; };
 		B7A00C8C28F2A7C300B90137 /* pipStockerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C8B28F2A7C300B90137 /* pipStockerUITestsLaunchTests.swift */; };
+		B7A00C9F28F2B0E300B90137 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A00C9E28F2B0E300B90137 /* ShareViewController.swift */; };
+		B7A00CA228F2B0E300B90137 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A00CA028F2B0E300B90137 /* MainInterface.storyboard */; };
+		B7A00CA628F2B0E300B90137 /* pipStocker-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B7A00C9C28F2B0E300B90137 /* pipStocker-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7E1FDE428F2D74F0036F6D3 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E1FDE328F2D74F0036F6D3 /* String+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +39,31 @@
 			remoteGlobalIDString = B7A00C6428F2A7C100B90137;
 			remoteInfo = pipStocker;
 		};
+		B7A00CA428F2B0E300B90137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A00C5D28F2A7C100B90137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7A00C9B28F2B0E300B90137;
+			remoteInfo = "pipStocker-extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B7A00CAA28F2B0E300B90137 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B7A00CA628F2B0E300B90137 /* pipStocker-extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Ex.swift"; sourceTree = "<group>"; };
 		B7A00C6528F2A7C100B90137 /* pipStocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pipStocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A00C6828F2A7C100B90137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A00C6A28F2A7C100B90137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +77,13 @@
 		B7A00C8528F2A7C300B90137 /* pipStockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pipStockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A00C8928F2A7C300B90137 /* pipStockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pipStockerUITests.swift; sourceTree = "<group>"; };
 		B7A00C8B28F2A7C300B90137 /* pipStockerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pipStockerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7A00C9C28F2B0E300B90137 /* pipStocker-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pipStocker-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A00C9E28F2B0E300B90137 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		B7A00CA128F2B0E300B90137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B7A00CA328F2B0E300B90137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A00CAB28F2B70C00B90137 /* pipStocker-extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "pipStocker-extension.entitlements"; sourceTree = "<group>"; };
+		B7A00CAC28F2B77700B90137 /* pipStocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pipStocker.entitlements; sourceTree = "<group>"; };
+		B7E1FDE328F2D74F0036F6D3 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7A00C9928F2B0E300B90137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +124,7 @@
 				B7A00C6728F2A7C100B90137 /* pipStocker */,
 				B7A00C7E28F2A7C300B90137 /* pipStockerTests */,
 				B7A00C8828F2A7C300B90137 /* pipStockerUITests */,
+				B7A00C9D28F2B0E300B90137 /* pipStocker-extension */,
 				B7A00C6628F2A7C100B90137 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +135,7 @@
 				B7A00C6528F2A7C100B90137 /* pipStocker.app */,
 				B7A00C7B28F2A7C300B90137 /* pipStockerTests.xctest */,
 				B7A00C8528F2A7C300B90137 /* pipStockerUITests.xctest */,
+				B7A00C9C28F2B0E300B90137 /* pipStocker-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +143,11 @@
 		B7A00C6728F2A7C100B90137 /* pipStocker */ = {
 			isa = PBXGroup;
 			children = (
+				B7A00CAC28F2B77700B90137 /* pipStocker.entitlements */,
 				B7A00C6828F2A7C100B90137 /* AppDelegate.swift */,
 				B7A00C6A28F2A7C100B90137 /* SceneDelegate.swift */,
 				B7A00C6C28F2A7C100B90137 /* ViewController.swift */,
+				B79B68D428F2C33500AC680D /* UserDefault+Ex.swift */,
 				B7A00C6E28F2A7C100B90137 /* Main.storyboard */,
 				B7A00C7128F2A7C300B90137 /* Assets.xcassets */,
 				B7A00C7328F2A7C300B90137 /* LaunchScreen.storyboard */,
@@ -127,6 +173,18 @@
 			path = pipStockerUITests;
 			sourceTree = "<group>";
 		};
+		B7A00C9D28F2B0E300B90137 /* pipStocker-extension */ = {
+			isa = PBXGroup;
+			children = (
+				B7A00CAB28F2B70C00B90137 /* pipStocker-extension.entitlements */,
+				B7A00C9E28F2B0E300B90137 /* ShareViewController.swift */,
+				B7E1FDE328F2D74F0036F6D3 /* String+Ex.swift */,
+				B7A00CA028F2B0E300B90137 /* MainInterface.storyboard */,
+				B7A00CA328F2B0E300B90137 /* Info.plist */,
+			);
+			path = "pipStocker-extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +195,12 @@
 				B7A00C6128F2A7C100B90137 /* Sources */,
 				B7A00C6228F2A7C100B90137 /* Frameworks */,
 				B7A00C6328F2A7C100B90137 /* Resources */,
+				B7A00CAA28F2B0E300B90137 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B7A00CA528F2B0E300B90137 /* PBXTargetDependency */,
 			);
 			name = pipStocker;
 			productName = pipStocker;
@@ -183,6 +243,23 @@
 			productReference = B7A00C8528F2A7C300B90137 /* pipStockerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B7A00C9B28F2B0E300B90137 /* pipStocker-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A00CA728F2B0E300B90137 /* Build configuration list for PBXNativeTarget "pipStocker-extension" */;
+			buildPhases = (
+				B7A00C9828F2B0E300B90137 /* Sources */,
+				B7A00C9928F2B0E300B90137 /* Frameworks */,
+				B7A00C9A28F2B0E300B90137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pipStocker-extension";
+			productName = "pipStocker-extension";
+			productReference = B7A00C9C28F2B0E300B90137 /* pipStocker-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +281,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = B7A00C6428F2A7C100B90137;
 					};
+					B7A00C9B28F2B0E300B90137 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 				};
 			};
 			buildConfigurationList = B7A00C6028F2A7C100B90137 /* Build configuration list for PBXProject "pipStocker" */;
@@ -222,6 +302,7 @@
 				B7A00C6428F2A7C100B90137 /* pipStocker */,
 				B7A00C7A28F2A7C300B90137 /* pipStockerTests */,
 				B7A00C8428F2A7C300B90137 /* pipStockerUITests */,
+				B7A00C9B28F2B0E300B90137 /* pipStocker-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +332,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7A00C9A28F2B0E300B90137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A00CA228F2B0E300B90137 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +350,7 @@
 				B7A00C6D28F2A7C100B90137 /* ViewController.swift in Sources */,
 				B7A00C6928F2A7C100B90137 /* AppDelegate.swift in Sources */,
 				B7A00C6B28F2A7C100B90137 /* SceneDelegate.swift in Sources */,
+				B79B68D528F2C33500AC680D /* UserDefault+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +371,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7A00C9828F2B0E300B90137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E1FDE428F2D74F0036F6D3 /* String+Ex.swift in Sources */,
+				B7A00C9F28F2B0E300B90137 /* ShareViewController.swift in Sources */,
+				B79B68D628F2C33500AC680D /* UserDefault+Ex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = B7A00C6428F2A7C100B90137 /* pipStocker */;
 			targetProxy = B7A00C8628F2A7C300B90137 /* PBXContainerItemProxy */;
+		};
+		B7A00CA528F2B0E300B90137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7A00C9B28F2B0E300B90137 /* pipStocker-extension */;
+			targetProxy = B7A00CA428F2B0E300B90137 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +416,14 @@
 				B7A00C7428F2A7C300B90137 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7A00CA028F2B0E300B90137 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7A00CA128F2B0E300B90137 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,8 +546,10 @@
 		B7A00C9028F2A7C300B90137 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pipStocker/pipStocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
@@ -461,8 +576,10 @@
 		B7A00C9128F2A7C300B90137 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pipStocker/pipStocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
@@ -562,6 +679,58 @@
 			};
 			name = Release;
 		};
+		B7A00CA828F2B0E300B90137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "pipStocker-extension/pipStocker-extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pipStocker-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "pipStocker-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hume.pipStocker.pipStocker-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7A00CA928F2B0E300B90137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "pipStocker-extension/pipStocker-extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pipStocker-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "pipStocker-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hume.pipStocker.pipStocker-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +766,15 @@
 			buildConfigurations = (
 				B7A00C9628F2A7C300B90137 /* Debug */,
 				B7A00C9728F2A7C300B90137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A00CA728F2B0E300B90137 /* Build configuration list for PBXNativeTarget "pipStocker-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A00CA828F2B0E300B90137 /* Debug */,
+				B7A00CA928F2B0E300B90137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
